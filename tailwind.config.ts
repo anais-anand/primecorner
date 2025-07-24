@@ -65,6 +65,7 @@ export default {
 				'royal-purple': 'hsl(var(--royal-purple))',
 				'imperial-navy': 'hsl(var(--imperial-navy))',
 				'bronze-accent': 'hsl(var(--bronze-accent))',
+				'sage-mist': 'hsl(var(--sage-mist))',
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
@@ -89,6 +90,7 @@ export default {
 				'spice': 'var(--shadow-spice)',
 				'elegant': 'var(--shadow-elegant)',
 				'royal': 'var(--shadow-royal)',
+				'forest': 'var(--shadow-forest)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
