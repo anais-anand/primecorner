@@ -1,42 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Prime Corner Impex Design System - Indo-Gulf Heritage Colors */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors - Indian Heritage Inspired */
+    --background: 48 15% 97%;
+    --foreground: 30 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 30 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 30 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Saffron Gold - Primary Brand Color */
+    --primary: 45 93% 58%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm Cream - Secondary */
+    --secondary: 48 25% 92%;
+    --secondary-foreground: 30 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Chai Brown - Muted */
+    --muted: 30 15% 88%;
+    --muted-foreground: 30 25% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Spice Red - Accent */
+    --accent: 14 88% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Turmeric Gold - Special Accent */
+    --gold: 51 100% 50%;
+    --gold-foreground: 30 25% 15%;
+
+    /* Heritage Brown - Deep Accent */
+    --heritage: 30 40% 25%;
+    --heritage-foreground: 48 15% 97%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 15% 85%;
+    --input: 30 15% 90%;
+    --ring: 45 93% 58%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(45 93% 58% / 0.1), hsl(14 88% 55% / 0.1));
+    --gradient-spice: linear-gradient(90deg, hsl(45 93% 58%), hsl(51 100% 50%), hsl(14 88% 55%));
+    --gradient-warm: linear-gradient(180deg, hsl(48 25% 92%), hsl(48 15% 97%));
+
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -5px hsl(45 93% 58% / 0.15);
+    --shadow-spice: 0 20px 40px -10px hsl(14 88% 55% / 0.2);
+    --shadow-elegant: 0 25px 50px -12px hsl(30 40% 25% / 0.25);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +123,130 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  /* Button Variants */
+  .btn-hero {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground shadow-warm transition-all duration-300 hover:shadow-spice hover:scale-105;
+  }
+
+  .btn-spice {
+    @apply bg-gradient-to-r from-accent to-gold hover:from-accent/90 hover:to-gold/90 text-white shadow-spice transition-all duration-300 hover:scale-105;
+  }
+
+  .btn-heritage {
+    @apply bg-heritage hover:bg-heritage/90 text-heritage-foreground shadow-elegant transition-all duration-300;
+  }
+
+  /* Card Styles */
+  .card-spice {
+    @apply bg-card border border-border shadow-warm hover:shadow-spice transition-all duration-500 hover:scale-105 rounded-lg;
+  }
+
+  .card-product {
+    @apply bg-gradient-to-br from-secondary to-card border border-primary/20 shadow-warm hover:shadow-spice transition-all duration-500 hover:scale-105 cursor-pointer;
+  }
+
+  /* Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-spice-swirl {
+    animation: spice-swirl 20s linear infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slide-in-left 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.8s ease-out forwards;
+  }
+
+  /* Gradient Text */
+  .text-gradient-spice {
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--gold)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Hero Background */
+  .hero-bg {
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E6B800' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    animation: spice-pattern 30s linear infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes spice-swirl {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spice-pattern {
+  0% { background-position: 0 0; }
+  100% { background-position: 60px 60px; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
