@@ -8,66 +8,73 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Indian Heritage Inspired */
-    --background: 48 15% 97%;
-    --foreground: 30 25% 15%;
+    /* Royal Heritage Color Palette - Deep & Luxurious */
+    --background: 40 12% 96%;
+    --foreground: 240 15% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 30 25% 15%;
+    --card: 40 20% 98%;
+    --card-foreground: 240 15% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 30 25% 15%;
+    --popover: 40 20% 98%;
+    --popover-foreground: 240 15% 12%;
 
-    /* Saffron Gold - Primary Brand Color */
-    --primary: 45 93% 58%;
-    --primary-foreground: 0 0% 100%;
+    /* Imperial Gold - Primary Brand Color */
+    --primary: 45 85% 35%;
+    --primary-foreground: 40 20% 98%;
 
-    /* Warm Cream - Secondary */
-    --secondary: 48 25% 92%;
-    --secondary-foreground: 30 25% 15%;
+    /* Royal Cream - Secondary */
+    --secondary: 40 25% 88%;
+    --secondary-foreground: 240 15% 15%;
 
-    /* Chai Brown - Muted */
-    --muted: 30 15% 88%;
-    --muted-foreground: 30 25% 45%;
+    /* Charcoal Mist - Muted */
+    --muted: 240 8% 82%;
+    --muted-foreground: 240 15% 35%;
 
-    /* Spice Red - Accent */
-    --accent: 14 88% 55%;
-    --accent-foreground: 0 0% 100%;
+    /* Imperial Burgundy - Accent */
+    --accent: 350 75% 28%;
+    --accent-foreground: 40 20% 98%;
 
-    /* Turmeric Gold - Special Accent */
-    --gold: 51 100% 50%;
-    --gold-foreground: 30 25% 15%;
+    /* Royal Gold - Special Accent */
+    --gold: 42 100% 45%;
+    --gold-foreground: 240 15% 12%;
 
-    /* Heritage Brown - Deep Accent */
-    --heritage: 30 40% 25%;
-    --heritage-foreground: 48 15% 97%;
+    /* Heritage Mahogany - Deep Accent */
+    --heritage: 15 60% 20%;
+    --heritage-foreground: 40 20% 98%;
 
-    /* Navbar Color Palette */
-    --deep-saffron: 27 96% 42%;
-    --burnt-umber: 25 72% 32%;
-    --olive-green: 60 37% 19%;
-    --cream-sand: 35 44% 92%;
-    --charcoal-slate: 0 0% 17%;
-    --copper-gold: 35 54% 49%;
+    /* Royal Navbar Palette - Deep & Contrasty */
+    --deep-saffron: 35 85% 30%;
+    --burnt-umber: 20 65% 25%;
+    --olive-green: 100 30% 15%;
+    --cream-sand: 40 35% 92%;
+    --charcoal-slate: 240 12% 8%;
+    --copper-gold: 35 70% 45%;
+    
+    /* Additional Royal Colors */
+    --royal-purple: 270 50% 25%;
+    --imperial-navy: 220 40% 15%;
+    --bronze-accent: 30 60% 35%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 40 20% 98%;
 
-    --border: 30 15% 85%;
-    --input: 30 15% 90%;
-    --ring: 45 93% 58%;
+    --border: 240 8% 75%;
+    --input: 240 8% 85%;
+    --ring: 45 85% 35%;
 
     --radius: 0.75rem;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(45 93% 58% / 0.1), hsl(14 88% 55% / 0.1));
-    --gradient-spice: linear-gradient(90deg, hsl(45 93% 58%), hsl(51 100% 50%), hsl(14 88% 55%));
-    --gradient-warm: linear-gradient(180deg, hsl(48 25% 92%), hsl(48 15% 97%));
+    /* Royal Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(45 85% 35% / 0.15), hsl(350 75% 28% / 0.15));
+    --gradient-spice: linear-gradient(90deg, hsl(45 85% 35%), hsl(42 100% 45%), hsl(350 75% 28%));
+    --gradient-warm: linear-gradient(180deg, hsl(40 25% 88%), hsl(40 12% 96%));
+    --gradient-royal: linear-gradient(135deg, hsl(270 50% 25%), hsl(220 40% 15%), hsl(15 60% 20%));
 
-    /* Shadows */
-    --shadow-warm: 0 10px 30px -5px hsl(45 93% 58% / 0.15);
-    --shadow-spice: 0 20px 40px -10px hsl(14 88% 55% / 0.2);
-    --shadow-elegant: 0 25px 50px -12px hsl(30 40% 25% / 0.25);
+    /* Royal Shadows */
+    --shadow-warm: 0 10px 30px -5px hsl(45 85% 35% / 0.25);
+    --shadow-spice: 0 20px 40px -10px hsl(350 75% 28% / 0.3);
+    --shadow-elegant: 0 25px 50px -12px hsl(15 60% 20% / 0.4);
+    --shadow-royal: 0 30px 60px -15px hsl(270 50% 25% / 0.35);
 
     --sidebar-background: 0 0% 98%;
 

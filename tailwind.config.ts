@@ -62,6 +62,9 @@ export default {
 				'cream-sand': 'hsl(var(--cream-sand))',
 				'charcoal-slate': 'hsl(var(--charcoal-slate))',
 				'copper-gold': 'hsl(var(--copper-gold))',
+				'royal-purple': 'hsl(var(--royal-purple))',
+				'imperial-navy': 'hsl(var(--imperial-navy))',
+				'bronze-accent': 'hsl(var(--bronze-accent))',
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
@@ -85,6 +88,7 @@ export default {
 				'warm': 'var(--shadow-warm)',
 				'spice': 'var(--shadow-spice)',
 				'elegant': 'var(--shadow-elegant)',
+				'royal': 'var(--shadow-royal)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
