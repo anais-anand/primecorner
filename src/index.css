@@ -8,76 +8,73 @@
 
 @layer base {
   :root {
-    /* Royal Earthy Palette - Inspired by Natural Luxury */
-    --background: 45 45% 94%;
-    --foreground: 140 25% 12%;
+    /* Royal Heritage Color Palette - Deep & Luxurious */
+    --background: 40 12% 96%;
+    --foreground: 240 15% 12%;
 
-    --card: 45 50% 96%;
-    --card-foreground: 140 25% 12%;
+    --card: 40 20% 98%;
+    --card-foreground: 240 15% 12%;
 
-    --popover: 45 50% 96%;
-    --popover-foreground: 140 25% 12%;
+    --popover: 40 20% 98%;
+    --popover-foreground: 240 15% 12%;
 
-    /* Mustard Gold - Primary Brand Color */
-    --primary: 45 45% 60%;
-    --primary-foreground: 140 25% 12%;
+    /* Imperial Gold - Primary Brand Color */
+    --primary: 45 85% 35%;
+    --primary-foreground: 40 20% 98%;
 
-    /* Egg Nog Cream - Secondary */
-    --secondary: 45 65% 88%;
-    --secondary-foreground: 140 25% 15%;
+    /* Royal Cream - Secondary */
+    --secondary: 40 25% 88%;
+    --secondary-foreground: 240 15% 15%;
 
-    /* Dust Sage - Muted */
-    --muted: 185 8% 48%;
-    --muted-foreground: 45 45% 94%;
+    /* Charcoal Mist - Muted */
+    --muted: 240 8% 82%;
+    --muted-foreground: 240 15% 35%;
 
-    /* Garnet Deep - Accent */
-    --accent: 20 85% 25%;
-    --accent-foreground: 45 65% 88%;
+    /* Imperial Burgundy - Accent */
+    --accent: 350 75% 28%;
+    --accent-foreground: 40 20% 98%;
 
-    /* Copper Warm - Special Accent */
-    --gold: 30 60% 48%;
-    --gold-foreground: 45 65% 88%;
+    /* Royal Gold - Special Accent */
+    --gold: 42 100% 45%;
+    --gold-foreground: 240 15% 12%;
 
-    /* Velvet Forest - Deep Accent */
-    --heritage: 140 30% 15%;
-    --heritage-foreground: 45 65% 88%;
+    /* Heritage Mahogany - Deep Accent */
+    --heritage: 15 60% 20%;
+    --heritage-foreground: 40 20% 98%;
 
-    /* Enhanced Royal Navbar Palette */
-    --deep-saffron: 30 60% 48%;
-    --burnt-umber: 20 85% 25%;
-    --olive-green: 140 30% 15%;
-    --cream-sand: 45 65% 88%;
-    --charcoal-slate: 140 25% 12%;
-    --copper-gold: 30 60% 48%;
+    /* Royal Navbar Palette - Deep & Contrasty */
+    --deep-saffron: 35 85% 30%;
+    --burnt-umber: 20 65% 25%;
+    --olive-green: 100 30% 15%;
+    --cream-sand: 40 35% 92%;
+    --charcoal-slate: 240 12% 8%;
+    --copper-gold: 35 70% 45%;
     
-    /* Extended Palette */
-    --royal-purple: 20 85% 20%;
-    --imperial-navy: 140 35% 10%;
-    --bronze-accent: 30 55% 40%;
-    --sage-mist: 185 12% 52%;
+    /* Additional Royal Colors */
+    --royal-purple: 270 50% 25%;
+    --imperial-navy: 220 40% 15%;
+    --bronze-accent: 30 60% 35%;
 
     --destructive: 0 70% 45%;
-    --destructive-foreground: 45 65% 88%;
+    --destructive-foreground: 40 20% 98%;
 
-    --border: 185 15% 70%;
-    --input: 185 15% 85%;
-    --ring: 45 45% 60%;
+    --border: 240 8% 75%;
+    --input: 240 8% 85%;
+    --ring: 45 85% 35%;
 
     --radius: 0.75rem;
 
-    /* Sophisticated Earthy Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(45 45% 60% / 0.12), hsl(20 85% 25% / 0.12));
-    --gradient-spice: linear-gradient(90deg, hsl(30 60% 48%), hsl(45 45% 60%), hsl(20 85% 25%));
-    --gradient-warm: linear-gradient(180deg, hsl(45 65% 88%), hsl(45 45% 94%));
-    --gradient-royal: linear-gradient(135deg, hsl(140 30% 15%), hsl(20 85% 25%), hsl(30 60% 48%));
-    --gradient-forest: linear-gradient(120deg, hsl(140 30% 15%), hsl(185 8% 48%));
+    /* Royal Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(45 85% 35% / 0.15), hsl(350 75% 28% / 0.15));
+    --gradient-spice: linear-gradient(90deg, hsl(45 85% 35%), hsl(42 100% 45%), hsl(350 75% 28%));
+    --gradient-warm: linear-gradient(180deg, hsl(40 25% 88%), hsl(40 12% 96%));
+    --gradient-royal: linear-gradient(135deg, hsl(270 50% 25%), hsl(220 40% 15%), hsl(15 60% 20%));
 
-    /* Luxurious Shadows */
-    --shadow-warm: 0 10px 30px -5px hsl(30 60% 48% / 0.25);
-    --shadow-spice: 0 20px 40px -10px hsl(20 85% 25% / 0.3);
-    --shadow-elegant: 0 25px 50px -12px hsl(140 30% 15% / 0.4);
-    --shadow-royal: 0 30px 60px -15px hsl(20 85% 20% / 0.35);
-    --shadow-forest: 0 15px 35px -8px hsl(140 30% 15% / 0.45);
+    /* Royal Shadows */
+    --shadow-warm: 0 10px 30px -5px hsl(45 85% 35% / 0.25);
+    --shadow-spice: 0 20px 40px -10px hsl(350 75% 28% / 0.3);
+    --shadow-elegant: 0 25px 50px -12px hsl(15 60% 20% / 0.4);
+    --shadow-royal: 0 30px 60px -15px hsl(270 50% 25% / 0.35);
 
     --sidebar-background: 0 0% 98%;
 
