@@ -48,7 +48,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section ref={sectionRef} className="py-24 px-4 bg-gradient-to-b from-background to-secondary/20">
+    <section id="contact" ref={sectionRef} className="py-24 px-4 bg-gradient-to-b from-background to-secondary/20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className={`text-center mb-16 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>

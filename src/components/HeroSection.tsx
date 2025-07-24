@@ -3,7 +3,7 @@ import primeCornerLogo from "@/assets/prime-corner-logo.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen hero-bg flex flex-col items-center justify-center relative px-4">
+    <section id="hero" className="min-h-screen hero-bg flex flex-col items-center justify-center relative px-4">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-float"></div>

@@ -23,7 +23,7 @@ const BrandSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 px-4 relative overflow-hidden">
+    <section id="brand" ref={sectionRef} className="py-24 px-4 relative overflow-hidden">
       {/* Background with Indian Flag Colors Inspiration */}
       <div className="absolute inset-0 bg-gradient-to-br from-secondary via-background to-secondary"></div>
       <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-accent via-background to-primary"></div>

@@ -56,6 +56,12 @@ export default {
 					DEFAULT: 'hsl(var(--heritage))',
 					foreground: 'hsl(var(--heritage-foreground))'
 				},
+				'deep-saffron': 'hsl(var(--deep-saffron))',
+				'burnt-umber': 'hsl(var(--burnt-umber))',
+				'olive-green': 'hsl(var(--olive-green))',
+				'cream-sand': 'hsl(var(--cream-sand))',
+				'charcoal-slate': 'hsl(var(--charcoal-slate))',
+				'copper-gold': 'hsl(var(--copper-gold))',
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'

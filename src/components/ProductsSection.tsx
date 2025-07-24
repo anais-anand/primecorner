@@ -122,7 +122,7 @@ const ProductsSection = () => {
 
   return (
     <>
-      <section ref={sectionRef} className="py-24 px-4 bg-gradient-to-b from-secondary/30 to-background">
+      <section id="products" ref={sectionRef} className="py-24 px-4 bg-gradient-to-b from-secondary/30 to-background">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className={`text-center mb-16 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>

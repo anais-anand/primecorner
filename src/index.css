@@ -42,6 +42,14 @@
     --heritage: 30 40% 25%;
     --heritage-foreground: 48 15% 97%;
 
+    /* Navbar Color Palette */
+    --deep-saffron: 27 96% 42%;
+    --burnt-umber: 25 72% 32%;
+    --olive-green: 60 37% 19%;
+    --cream-sand: 35 44% 92%;
+    --charcoal-slate: 0 0% 17%;
+    --copper-gold: 35 54% 49%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
