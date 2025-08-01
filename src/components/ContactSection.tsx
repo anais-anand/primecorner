@@ -39,7 +39,6 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
     toast({
       title: "Message Sent!",
       description: "Thank you for contacting Prime Corner Impex WLL. We'll get back to you soon!",
@@ -61,132 +60,70 @@ const ContactSection = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-primary via-gold to-accent rounded-full mx-auto mt-6"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Information */}
-          <div className={`space-y-8 ${isVisible ? 'animate-slide-in-left' : 'opacity-0'}`}>
-            <div>
-              <h3 className="text-3xl font-bold text-heritage mb-6">Get in Touch</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                We're here to assist you with all your import and export needs. Whether you're interested in bulk orders, product inquiries, or partnership opportunities, our team is ready to help.
-              </p>
-            </div>
+        <div className={`space-y-8 max-w-5xl mx-auto ${isVisible ? 'animate-slide-in-up' : 'opacity-0'}`}>
+          <h3 className="text-3xl font-bold text-heritage mb-6 text-center">Get in Touch</h3>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-center">
+            We're here to assist you with all your import and export needs. Whether you're interested in bulk orders, product inquiries, or partnership opportunities, our team is ready to help.
+          </p>
 
-            {/* Contact Cards */}
-            <div className="space-y-6">
-              <div className="card-spice p-6 flex items-center gap-4 hover:shadow-spice">
-                <div className="w-14 h-14 bg-gradient-to-br from-primary to-gold rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-heritage mb-1">Phone</h4>
-                  <p className="text-muted-foreground">+965 123 456 789</p>
-                  <p className="text-sm text-muted-foreground">Mon-Fri, 9AM-6PM Kuwait Time</p>
-                </div>
+          {/* Contact cards grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            {/* Phone - Left */}
+            <div className="card-spice p-6 flex items-center gap-4 hover:shadow-spice justify-start">
+              <div className="w-14 h-14 bg-gradient-to-br from-primary to-gold rounded-xl flex items-center justify-center flex-shrink-0">
+                <Phone className="w-6 h-6 text-white" />
               </div>
-
-              <div className="card-spice p-6 flex items-center gap-4 hover:shadow-spice">
-                <div className="w-14 h-14 bg-gradient-to-br from-accent to-heritage rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-heritage mb-1">Email</h4>
-                  <p className="text-muted-foreground">info@primecornerimpex.com</p>
-                  <p className="text-sm text-muted-foreground">We respond within 24 hours</p>
-                </div>
-              </div>
-
-              <div className="card-spice p-6 flex items-center gap-4 hover:shadow-spice">
-                <div className="w-14 h-14 bg-gradient-to-br from-gold to-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-heritage mb-1">Location</h4>
-                  <p className="text-muted-foreground">Kuwait City, Kuwait</p>
-                  <p className="text-sm text-muted-foreground">Strategic Gulf location for efficient trade</p>
-                </div>
+              <div>
+                <h4 className="font-semibold text-heritage mb-1">Phone</h4>
+                <p className="text-muted-foreground">+965 6505 8568</p>
+                <p className="text-sm text-muted-foreground">Sun-Thur, 8AM-6PM Kuwait Time</p>
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-gradient-to-br from-secondary to-muted rounded-2xl p-8 text-center border border-primary/20">
-              <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h4 className="text-xl font-bold text-heritage mb-2">Kuwait Operations Center</h4>
-              <p className="text-muted-foreground">
-                Strategically located in Kuwait for optimal Gulf region distribution
-              </p>
+           {/* Email - Left */}
+<div className="card-spice p-6 flex items-center gap-6 hover:shadow-spice justify-start">
+  <div className="w-14 h-14 bg-gradient-to-br from-accent to-heritage rounded-xl flex items-center justify-center flex-shrink-0">
+    <Mail className="w-6 h-6 text-white" />
+  </div>
+  <div className="text-left max-w-xs">
+    <h4 className="font-semibold text-heritage mb-1">Email</h4>
+    <p className="text-muted-foreground">info@primecornerimpex.com</p>
+    <p className="text-muted-foreground">primecornerimpex@gmail.com</p>
+    <p className="text-sm text-muted-foreground">We respond within 24 hours</p>
+  </div>
+</div>
+
+            {/* Location Text - Left */}
+            <div className="card-spice p-6 flex items-center gap-4 hover:shadow-spice justify-start">
+              <div className="w-14 h-14 bg-gradient-to-br from-gold to-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-heritage mb-1">Location</h4>
+                <p className="text-muted-foreground">
+                  Prime Corner Impex Company, Behbahani complex, Floor 7, Office 6, Sharq, Kuwait City
+                </p>
+                <p className="text-sm text-muted-foreground">Strategic Gulf location for efficient trade</p>
+              </div>
             </div>
-          </div>
 
-          {/* Contact Form */}
-          <div className={`${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
-            <div className="card-spice p-8">
-              <h3 className="text-2xl font-bold text-heritage mb-6">Send us a Message</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-heritage mb-2">
-                    Full Name
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    placeholder="Enter your full name"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-border focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-heritage mb-2">
-                    Email Address
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder="Enter your email address"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-border focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-heritage mb-2">
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Tell us about your requirements, quantity needs, or any questions you have..."
-                    required
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-xl border border-border focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="btn-spice w-full py-4 text-lg font-semibold rounded-xl flex items-center justify-center gap-3"
-                >
-                  <Send className="w-5 h-5" />
-                  Send Message
-                </Button>
-              </form>
-
-              <div className="mt-8 pt-6 border-t border-border text-center">
-                <p className="text-sm text-muted-foreground">
-                  For urgent inquiries, please call us directly at{" "}
-                  <span className="text-primary font-medium">+965 123 456 789</span>
+            {/* Location Map Link - Right */}
+            <a
+              href="https://maps.app.goo.gl/Ya6GzbtMLX4zZMdH7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="card-spice p-6 bg-gradient-to-br from-secondary to-muted rounded-2xl border border-primary/20 hover:shadow-lg transition flex flex-col items-center justify-center h-full text-center">
+                <MapPin className="w-12 h-12 text-primary mb-4" />
+                <h4 className="text-xl font-bold text-heritage mb-2">Prime Corner Impex Company</h4>
+                <p className="text-muted-foreground">
+                  View on Google Maps
                 </p>
               </div>
-            </div>
+            </a>
+
           </div>
         </div>
       </div>

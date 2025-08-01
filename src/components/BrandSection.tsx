@@ -34,7 +34,7 @@ const BrandSection = () => {
         <div className={`mb-12 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
           <div className="relative inline-block">
             <img
-              src={primeCornerLogo}
+              src="src\assets\laz-logo.jpg"
               alt="Prime Corner Impex WLL"
               className="w-64 h-64 mx-auto object-contain rounded-3xl shadow-elegant hover:shadow-spice transition-all duration-700 hover:scale-105"
             />
@@ -50,7 +50,7 @@ const BrandSection = () => {
           
           <div className="max-w-4xl mx-auto space-y-6">
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-              Born from a passion for authentic Indian heritage and a vision for global excellence, Prime Corner Impex WLL represents the perfect blend of tradition and innovation.
+              Born from a passion for authentic Indian heritage and a vision for global excellence, LAZ Premium represents the perfect blend of tradition and innovation.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mt-12">

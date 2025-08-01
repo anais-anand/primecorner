@@ -1,21 +1,24 @@
 import { useEffect, useRef, useState } from "react";
 import ProductModal from "./ProductModal";
-import b12WaterImage from "@/assets/b12-water.jpg";
+import b12WaterImage from "@/assets/nutrineer.jpg";
 import riceImage from "@/assets/rice.jpg";
 import coffeeImage from "@/assets/coffee.jpg";
 import spicesImage from "@/assets/spices.jpg";
-
+import pulseImage from "@/assets/pulses.jpg";
+import hamiImage from "@/assets/hami-clean.jpg";
+import shippingImg from "@/assets/shipping.jpg";
 const products = [
   {
     id: "b12-water",
-    name: "B12 Fortified Water",
+    name: "Bottled Water- Nutrineer",
     image: b12WaterImage,
-    description: "Premium vitamin B12 fortified water sourced from pristine Indian springs. Our B12 water combines purity with essential nutrition, providing a convenient way to supplement your daily vitamin B12 intake while staying hydrated.",
+    description: "Premium vitamin B12 water sourced from pristine Indian springs. Our B12 water combines purity with essential nutrition, providing a convenient way to supplement your daily vitamin B12 intake while staying hydrated. As well as flavoured water for hydration",
     varieties: [
-      "500ml Bottles",
-      "1L Bottles", 
-      "Family Pack (6x500ml)",
-      "Bulk Orders Available"
+      "Vitamin B12 Water Bottle 330 ml",
+      "Vitamin B12 Water Bottle 500 ml",
+      "Vitamin B12 Water Bottle 750 ml",
+      "Lichi Flavoured Water ", 
+      "Orange Flavoured Water "
     ],
     features: [
       "High-quality vitamin B12 supplementation",
@@ -25,17 +28,24 @@ const products = [
       "Eco-friendly packaging"
     ]
   },
+  
   {
     id: "rice",
-    name: "Premium Basmati Rice",
+    name: "Premium Rice",
     image: riceImage,
-    description: "Authentic Indian Basmati rice known for its distinctive aroma, long grains, and delicate flavor. Sourced directly from the fertile fields of India, our rice represents generations of farming expertise and traditional cultivation methods.",
+    description: "Authentic Indian rice (Basmati Rice & Non-Basmati Rice) known for its distinctive aroma, long grains, and delicate flavor. Sourced directly from the fertile fields of India, our rice represents generations of farming expertise and traditional cultivation methods.",
     varieties: [
-      "Extra Long Grain Basmati",
-      "Aged Basmati (1 Year)",
-      "Aged Basmati (2 Years)",
-      "Brown Basmati Rice",
-      "Organic Basmati Rice"
+      "1121 - Available in Steam, Golden Sella, Creamy Sella & Raw forms",
+      "1401 - Available in Steam, Golden Sella, Creamy Sella & Raw forms",
+      "1509 - Available in Steam, Golden Sella, Creamy Sella & Raw forms",
+      "PUSA - Available in Steam, Golden Sella, Creamy Sella & Raw forms",
+      "PR-11/14/47",
+      "Sugandha",
+      "Sarbati",
+      "IR 64 Parboiled Rice 5% Broken",
+      "IR 64 White Rice 5%, 25% & 100% Broken",
+      "Thai Parboiled Rice 5% broken",
+      "Thai White Rice 5% & 25% Broken"
     ],
     features: [
       "Authentic Indian origin with certification",
@@ -47,15 +57,15 @@ const products = [
   },
   {
     id: "coffee",
-    name: "Artisan Indian Coffee",
+    name: "Indian Coffee",
     image: coffeeImage,
     description: "Rich, aromatic coffee sourced from the renowned coffee plantations of South India. Our coffee beans are carefully selected, roasted to perfection, and ground using traditional methods to preserve the authentic Indian coffee experience.",
     varieties: [
-      "Arabica Whole Beans",
-      "Robusta Blend",
-      "Filter Coffee Powder",
-      "Instant Coffee Premium",
-      "Coffee with Chicory"
+      "Arabica : Cherry-  AAA, AA, A",
+      "Arabica : Plantation - AAA,AA,A",
+      "Arabica : Plantation- Mysore Nebari",
+      "Robusta: Cherry-  AAA,AA,A",
+       
     ],
     features: [
       "Single-origin Indian coffee beans",
@@ -72,10 +82,19 @@ const products = [
     description: "A comprehensive collection of authentic Indian spices that form the heart of Indian cuisine. Each spice is carefully selected, processed, and packaged to maintain its natural oils, aroma, and flavor profile.",
     varieties: [
       "Turmeric Powder",
-      "Red Chili Powder",
+      "Red Chili Powder and Whole",
       "Garam Masala Blend",
       "Whole Spices Collection",
-      "Curry Powder Varieties"
+      "Curry Powder Varieties",
+      "Cardamom All Grades",
+      "Cinnamon",
+      "Cloves",
+      "Black Pepper",
+      "Corriander",
+      "Dried Ginger and Ginger Powder",
+      "Star Anise",
+      "Biriyani Mix"
+
     ],
     features: [
       "100% pure and natural ingredients",
@@ -84,6 +103,72 @@ const products = [
       "No artificial colors or additives",
       "Authentic regional spice blends"
     ]
+  },
+  // ...existing products
+ {
+  id: "Cleaning Agents",
+  name: "Hami Cleaning Agents",
+  image: hamiImage, // Ensure this image is properly imported
+  description: "Powerful and reliable cleaning agents designed for households and businesses. Hami ensures hygienic spaces with effective formulations that tackle dirt, grease, and germs effortlessly.",
+  varieties: [
+    
+"Hand wash liquid 500gm new design 20pcs/box",
+ "Hand wash liquid 500gm old design 20pcs/box",
+  "Dish washing liquid 800g 12pcs/box",
+   "Bleach Liquid 4000g 4pcs/box",
+    "Glass Cleaner 500g 20 pcs/box",
+     "Colour washing liquid auto3500g 4pcs/box",
+      "Black washing liquid 3500g 4pcs/box"
+  ],
+  features: [
+    "Kills 99.9% of germs and bacteria",
+    "Tough on stains, gentle on surfaces",
+    "Pleasant and long-lasting fragrance",
+    "Safe for everyday use at home and in commercial spaces",
+    "Eco-conscious ingredients with strong cleaning power"
+  ]
+}
+,
+  {
+    id: "Pulses",
+    name: "Pulses",
+    image: pulseImage,
+    description: "Naturally grown and carefully selected, our pulses are rich in protein and essential nutrients—perfect for healthy, everyday cooking",
+    varieties: [
+      "Pulses", 
+      "Beans",
+      "Peas"
+    ],
+   features: [
+  "Sourced from premium-grade farms across India",
+  "Naturally grown and chemical-free processing",
+  "High in protein, fiber, and essential nutrients",
+  "Strict quality control and hygienic packaging",
+  "Available in bulk and retail-friendly packs",
+  "Long shelf life and consistent taste"
+]
+
+  },
+  
+    {
+    id: "Shipping",
+    name: "Shipping",
+    image: shippingImg,
+    description: "Naturally grown and carefully selected, our pulses are rich in protein and essential nutrients—perfect for healthy, everyday cooking",
+    varieties: [
+      "Pulses", 
+      "Beans",
+      "Peas"
+    ],
+   features: [
+  "Sourced from premium-grade farms across India",
+  "Naturally grown and chemical-free processing",
+  "High in protein, fiber, and essential nutrients",
+  "Strict quality control and hygienic packaging",
+  "Available in bulk and retail-friendly packs",
+  "Long shelf life and consistent taste"
+]
+
   }
 ];
 
@@ -127,10 +212,10 @@ const ProductsSection = () => {
           {/* Header */}
           <div className={`text-center mb-16 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
             <h2 className="text-4xl md:text-6xl font-bold text-gradient-spice mb-6">
-              Our Premium Products
+              Our Premium Products & Services
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Discover our carefully curated selection of authentic Indian products, each representing the finest quality and traditional heritage.
+              Discover our carefully curated selection of authentic Indian products, each representing the finest quality and traditional heritage & the services that we provide.
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-primary via-gold to-accent rounded-full mx-auto mt-6"></div>
           </div>
@@ -203,9 +288,7 @@ const ProductsSection = () => {
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
                 We offer competitive pricing for wholesale and bulk orders. Contact our team to discuss your requirements and get a customized quote.
               </p>
-              <button className="btn-heritage px-8 py-3 rounded-xl text-lg font-semibold">
-                Get Wholesale Pricing
-              </button>
+              
             </div>
           </div>
         </div>

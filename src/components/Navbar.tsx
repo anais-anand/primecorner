@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logoImage from '@/assets/prime-corner-logo.jpg';
+//import logoImage from 'src/assets/main-logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: 'Home', href: '#hero' },
     { name: 'About', href: '#about' },
     { name: 'Our Brand', href: '#brand' },
-    { name: 'Products', href: '#products' },
+    { name: 'Products & Services', href: '#products' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -51,7 +51,7 @@ const Navbar = () => {
               }`}
             >
               <img
-                src={logoImage}
+                src="src/assets/main-logo.png"
                 alt="Prime Corner Impex WLL"
                 className={`transition-all duration-500 ease-in-out ${
                   isScrolled ? 'h-10 w-10' : 'h-12 w-12'
