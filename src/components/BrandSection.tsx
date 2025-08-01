@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import primeCornerLogo from "public/prime-corner-logo.jpg";
+
+const lazlogo="\laz-logo.jpg";
 
 const BrandSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,7 +35,7 @@ const BrandSection = () => {
         <div className={`mb-12 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
           <div className="relative inline-block">
             <img
-              src="public\laz-logo.jpg"
+              src={lazlogo}
               alt="Prime Corner Impex WLL"
               className="w-64 h-64 mx-auto object-contain rounded-3xl shadow-elegant hover:shadow-spice transition-all duration-700 hover:scale-105"
             />

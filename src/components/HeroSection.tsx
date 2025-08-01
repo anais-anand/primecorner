@@ -1,5 +1,5 @@
 import { Phone, Mail } from "lucide-react";
-import primeCornerLogo from "public\main-logo.png";
+const primeCornerLogo="\main-logo.png";
 import { useRef } from "react";
 
 const HeroSection = () => {
@@ -11,9 +11,15 @@ const HeroSection = () => {
       {/* Background Video + Overlay + Floating Circles */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Background Video */}
-        <video autoPlay muted loop playsInline className="hero-video">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          >
           <source src="/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          Your browser does not support the video tag.
         </video>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -34,7 +40,7 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8 animate-fade-in-up">
           <img
-            src="public/main-logo.png"
+            src={primeCornerLogo}
             alt="Prime Corner Impex Company WLL"
             className="w-48 h-48 object-contain rounded-full shadow-warm hover:shadow-spice transition-all duration-500 hover:scale-105"
           />

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+const primeCornerLogo="\main-logo.png";
 //import logoImage from 'src/assets/main-logo.png';
 
 const Navbar = () => {
@@ -51,7 +52,7 @@ const Navbar = () => {
               }`}
             >
               <img
-                src="public/main-logo.png"
+                src={primeCornerLogo}
                 alt="Prime Corner Impex WLL"
                 className={`transition-all duration-500 ease-in-out ${
                   isScrolled ? 'h-10 w-10' : 'h-12 w-12'
