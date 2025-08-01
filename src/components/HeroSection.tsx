@@ -11,14 +11,10 @@ const HeroSection = () => {
       {/* Background Video + Overlay + Floating Circles */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Background Video */}
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          src="public\video.mp4" // Replace with your trimmed video path
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
+        <video autoPlay muted loop playsInline className="hero-video">
+          <source src="/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         {/* Floating Circles */}
