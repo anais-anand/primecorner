@@ -51,7 +51,7 @@ const Navbar = () => {
               }`}
             >
               <img
-                src="src/assets/main-logo.png"
+                src="public/main-logo.png"
                 alt="Prime Corner Impex WLL"
                 className={`transition-all duration-500 ease-in-out ${
                   isScrolled ? 'h-10 w-10' : 'h-12 w-12'

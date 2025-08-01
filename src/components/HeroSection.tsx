@@ -1,5 +1,5 @@
 import { Phone, Mail } from "lucide-react";
-import primeCornerLogo from "@/assets/prime-corner-logo.jpg";
+import primeCornerLogo from "public\main-logo.png";
 import { useRef } from "react";
 
 const HeroSection = () => {
@@ -13,7 +13,7 @@ const HeroSection = () => {
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="src\assets\video.mp4" // Replace with your trimmed video path
+          src="public\video.mp4" // Replace with your trimmed video path
           autoPlay
           muted
           loop
@@ -38,7 +38,7 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8 animate-fade-in-up">
           <img
-            src="src/assets/main-logo.png"
+            src="public/main-logo.png"
             alt="Prime Corner Impex Company WLL"
             className="w-48 h-48 object-contain rounded-full shadow-warm hover:shadow-spice transition-all duration-500 hover:scale-105"
           />

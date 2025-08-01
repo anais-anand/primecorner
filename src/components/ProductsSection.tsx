@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import ProductModal from "./ProductModal";
-import b12WaterImage from "@/assets/nutrineer.jpg";
-import riceImage from "@/assets/rice.jpg";
-import coffeeImage from "@/assets/coffee.jpg";
-import spicesImage from "@/assets/spices.jpg";
-import pulseImage from "@/assets/pulses.jpg";
-import hamiImage from "@/assets/hami-clean.jpg";
-import shippingImg from "@/assets/shipping.jpg";
+const b12WaterImage="/nutrineer.jpg";
+const riceImage="/rice.jpg";
+const coffeeImage="/coffee.jpg";
+const spicesImage="/spices.jpg";
+const pulseImage="/pulses.jpg";
+const hamiImage="/hami-clean.jpg";
+const shippingImg="/shipping.jpg";
 const products = [
   {
     id: "b12-water",
