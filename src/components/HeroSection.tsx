@@ -116,7 +116,7 @@ const HeroSection = () => {
 
   {/* WhatsApp */}
   <a
-    href="https://wa.me/96569609964"
+    href="https://wa.me/96565058568"
     target="_blank"
     rel="noopener noreferrer"
     className="bg-white/80 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-300"
