@@ -110,7 +110,7 @@ const ContactSection = () => {
 
             {/* Location Map Link - Right */}
             <a
-              href="https://maps.app.goo.gl/Ya6GzbtMLX4zZMdH7"
+              href="https://maps.app.goo.gl/azCLmLJfhGcMPyVd7?g_st=ipc"
               target="_blank"
               rel="noopener noreferrer"
               className="block"
