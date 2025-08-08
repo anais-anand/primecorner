@@ -77,7 +77,9 @@ const ContactSection = () => {
               <div>
                 <h4 className="font-semibold text-heritage mb-1">Phone</h4>
                 <p className="text-muted-foreground">+965 6505 8568</p>
-                <p className="text-sm text-muted-foreground">Sun-Thur, 8AM-6PM Kuwait Time</p>
+                <p className="text-sm text-muted-foreground">Sun-Thur, 8AM-5PM Kuwait Time</p>
+                <p className="text-sm text-muted-foreground">Sat, 9AM-1PM Kuwait Time</p>
+
               </div>
             </div>
 
