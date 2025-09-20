@@ -85,7 +85,7 @@ const products = [
     varieties: [
       "Arabica : Cherry-  AAA, AA, A",
       "Arabica : Plantation - AAA,AA,A",
-      "Arabica : Plantation- Mysore Nebari",
+      "Arabica : Plantation- Mysore Nebari AAA,AA,A",
       "Robusta: Cherry-  AAA,AA,A",
        
     ],

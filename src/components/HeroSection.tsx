@@ -38,13 +38,13 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 text-left max-w-4xl">
         {/* Logo */}
-        <div className="mb-8 animate-fade-in-up">
+        {/*<div className="mb-8 animate-fade-in-up">
           <img
             src={primeCornerLogo}
             alt="Prime Corner Impex Company WLL"
             className="w-48 h-48 object-contain rounded-full shadow-warm hover:shadow-spice transition-all duration-500 hover:scale-105"
           />
-        </div>
+        </div>*/}
 
         {/* Company Name */}
         <h1
