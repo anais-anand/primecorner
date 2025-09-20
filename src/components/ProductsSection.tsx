@@ -7,13 +7,18 @@ const spicesImage="/spices.jpg";
 const pulseImage="/pulses.jpg";
 const hamiImage="/hami-clean.jpg";
 const cardamomImage="/cardamom.jpg";
+const cardamom1Image="/cardamom1.jpg";
+const cardamom21Image="/cardamom21.jpg";
+const cardamom22Image="/cardamom22.jpg";
 const shippingImg="/shipping.jpg";
 const ethiopianImg="/ethipian coffee.jpg";
+const nutrineerImg="/nutrineer1.png";
 const products = [
   {
     id: "b12-water",
     name: "Bottled Water- Nutrineer",
     image: b12WaterImage,
+    gallery: [b12WaterImage,nutrineerImg],
     description: "Premium vitamin B12 water sourced from pristine Indian springs. Our B12 water combines purity with essential nutrition, providing a convenient way to supplement your daily vitamin B12 intake while staying hydrated. As well as flavoured water for hydration",
     varieties: [
       "Vitamin B12 Water Bottle 330 ml",
@@ -61,6 +66,7 @@ const products = [
     id: "cardamom",
     name: "Cardamom",
     image: cardamomImage,
+    gallery: [cardamom21Image,cardamom22Image, cardamom1Image],
     description: "Premium, handpicked cardamom sourced from the lush spice plantations of Kerala, India. Known as the 'Queen of Spices', our cardamom pods are carefully harvested, sun-dried, and packed to preserve their rich aroma and natural flavor, bringing an authentic touch to your culinary and wellness experiences.",
     varieties: [
       "6-7mm",
@@ -81,18 +87,17 @@ const products = [
     id: "coffee",
     name: "Indian Coffee",
     image: coffeeImage,
+    
     description: "Rich, aromatic coffee sourced from the renowned coffee plantations of South India. Our coffee beans are carefully selected, roasted to perfection, and ground using traditional methods to preserve the authentic Indian coffee experience.",
     varieties: [
       "Arabica : Cherry-  AAA, AA, A",
       "Arabica : Plantation - AAA,AA,A",
-      "Arabica : Plantation- Mysore Nebari AAA,AA,A",
+      "Mysore Nebari AAA,AA,A",
       "Robusta: Cherry-  AAA,AA,A",
        
     ],
     features: [
       "Single-origin Indian coffee beans",
-      "Traditional roasting techniques",
-      "Multiple grind options available",
       "Rich aroma and full-bodied flavor",
       "Ethically sourced from local farmers"
     ]
@@ -101,6 +106,7 @@ const products = [
     id: "ethcoffee",
     name: "Ethiopian Coffee",
     image: ethiopianImg,
+    
     description: "Exquisite Ethiopian coffee sourced from the highlands, known as the birthplace of coffee. Grown at high altitudes in mineral-rich soil, Ethiopian beans are celebrated for their complex flavor profile, bright acidity, and floral aroma. Each batch is carefully handpicked and traditionally processed to preserve its unique character.",
     varieties: [
       "Arabica : Cherry-  AAA, AA, A",
@@ -118,6 +124,7 @@ const products = [
     id: "spices",
     name: "Authentic Indian Spices",
     image: spicesImage,
+    
     description: "A comprehensive collection of authentic Indian spices that form the heart of Indian cuisine. Each spice is carefully selected, processed, and packaged to maintain its natural oils, aroma, and flavor profile.",
     varieties: [
       "Turmeric Powder",
@@ -149,6 +156,7 @@ const products = [
     id: "Pulses",
     name: "Pulses",
     image: pulseImage,
+    
     description: "Naturally grown and carefully selected, our pulses are rich in protein and essential nutrients—perfect for healthy, everyday cooking",
     varieties: [
       "Pulses", 
@@ -170,19 +178,15 @@ const products = [
     id: "Shipping",
     name: "Shipping",
     image: shippingImg,
-    description: "Naturally grown and carefully selected, our pulses are rich in protein and essential nutrients—perfect for healthy, everyday cooking",
+    
+    description: "Fast, reliable, and secure shipping for all orders. We ensure your products reach you safely and on time.",
     varieties: [
-      "Pulses", 
-      "Beans",
-      "Peas"
+      "Domestic Shipping", 
+      "International Shipping"
+      
     ],
    features: [
-  "Sourced from premium-grade farms across India",
-  "Naturally grown and chemical-free processing",
-  "High in protein, fiber, and essential nutrients",
-  "Strict quality control and hygienic packaging",
-  "Available in bulk and retail-friendly packs",
-  "Long shelf life and consistent taste"
+  "Safe and secure packaging"
 ]
 
   }
@@ -268,7 +272,19 @@ const ProductsSection = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
                     {product.description.substring(0, 80)}...
                   </p>
-                  
+         {/* 👇 THIS IS THE NEWLY ADDED GALLERY SECTION */}
+  {product.gallery && (
+    <div className="flex gap-2 mt-3 overflow-x-auto">
+      {product.gallery.map((img, idx) => (
+        <img
+          key={idx}
+          src={img}
+          alt={`${product.name} ${idx}`}
+          className="w-16 h-16 object-cover rounded-lg flex-shrink-0 border border-primary/20"
+        />
+      ))}
+    </div>
+  )}           
                   {/* Quick Features */}
                   <div className="flex flex-wrap gap-2 pt-2">
                     {product.varieties.slice(0, 2).map((variety, idx) => (

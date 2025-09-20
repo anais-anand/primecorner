@@ -56,6 +56,22 @@ const ProductModal = ({ product, isOpen, onClose }: ProductModalProps) => {
             <h4 className="text-xl font-bold text-heritage mb-3">About Our {product.name}</h4>
             <p className="text-muted-foreground leading-relaxed">{product.description}</p>
           </div>
+             {/* ✅ Gallery Section */}
+          {product?.gallery && (
+            <div>
+              <h4 className="text-xl font-bold text-heritage mb-3">Gallery</h4>
+              <div className="flex gap-3 overflow-x-auto pb-2">
+                {product.gallery.map((img, idx) => (
+                  <img
+                    key={idx}
+                    src={img}
+                    alt={`${product.name} ${idx}`}
+                    className="w-40 h-28 object-cover rounded-lg border border-primary/20"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Varieties */}
           <div>

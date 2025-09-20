@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-const spicesHero="/spices-hero.jpg";
+const spicesHero="/ABOUTT US.png";
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
