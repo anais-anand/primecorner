@@ -16,7 +16,7 @@ const nutrineerImg="/nutrineer1.png";
 const products = [
   {
     id: "b12-water",
-    name: "B12 Water- Nutrineer",
+    name: "Nutrineer - Vitamin B12 Water",
     image: b12WaterImage,
     gallery: [b12WaterImage,nutrineerImg],
     description: "Premium vitamin B12 water sourced from pristine Indian springs. Our B12 water combines purity with essential nutrition, providing a convenient way to supplement your daily vitamin B12 intake while staying hydrated. As well as flavoured water for hydration",
