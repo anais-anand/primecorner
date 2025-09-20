@@ -2,11 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import ProductModal from "./ProductModal";
 const b12WaterImage="/nutrineer.jpg";
 const riceImage="/rice.jpg";
-const coffeeImage="/coffee.jpg";
+const coffeeImage="/cof.jpg";
 const spicesImage="/spices.jpg";
 const pulseImage="/pulses.jpg";
 const hamiImage="/hami-clean.jpg";
+const cardamomImage="/cardamom.jpg";
 const shippingImg="/shipping.jpg";
+const ethiopianImg="/ethipian coffee.jpg";
 const products = [
   {
     id: "b12-water",
@@ -29,7 +31,7 @@ const products = [
     ]
   },
   
-  {
+  /*{
     id: "rice",
     name: "Premium Rice",
     image: riceImage,
@@ -54,6 +56,26 @@ const products = [
       "Minimal processing to retain nutrients",
       "Available in multiple packaging sizes"
     ]
+  },*/
+  {
+    id: "cardamom",
+    name: "Cardamom",
+    image: cardamomImage,
+    description: "Premium, handpicked cardamom sourced from the lush spice plantations of Kerala, India. Known as the 'Queen of Spices', our cardamom pods are carefully harvested, sun-dried, and packed to preserve their rich aroma and natural flavor, bringing an authentic touch to your culinary and wellness experiences.",
+    varieties: [
+      "6-7mm",
+      "6.5-7.5mm",
+      "7mm",
+      "8mm",
+      "8mm bold"
+       
+    ],
+    features: [
+      "Handpicked and sun-dried for maximum freshness",
+      "Versatile use in food, beverages, and wellness",
+      "Sustainably sourced from local farmers"
+      
+    ]
   },
   {
     id: "coffee",
@@ -73,6 +95,23 @@ const products = [
       "Multiple grind options available",
       "Rich aroma and full-bodied flavor",
       "Ethically sourced from local farmers"
+    ]
+  },
+  {
+    id: "ethcoffee",
+    name: "Ethiopian Coffee",
+    image: ethiopianImg,
+    description: "Exquisite Ethiopian coffee sourced from the highlands, known as the birthplace of coffee. Grown at high altitudes in mineral-rich soil, Ethiopian beans are celebrated for their complex flavor profile, bright acidity, and floral aroma. Each batch is carefully handpicked and traditionally processed to preserve its unique character.",
+    varieties: [
+      "Arabica : Cherry-  AAA, AA, A",
+      "Arabica : Plantation - AAA,AA,A",
+      "Robusta: Cherry-  AAA,AA,A",
+       
+    ],
+    features: [
+      "Single-origin Ethiopian Arabica beans",
+      "Grown at high altitudes for rich flavor",
+      "Traditionally handpicked and processed"
     ]
   },
   {
@@ -105,30 +144,7 @@ const products = [
     ]
   },
   // ...existing products
- {
-  id: "Cleaning Agents",
-  name: "Hami Cleaning Agents",
-  image: hamiImage, // Ensure this image is properly imported
-  description: "Powerful and reliable cleaning agents designed for households and businesses. Hami ensures hygienic spaces with effective formulations that tackle dirt, grease, and germs effortlessly.",
-  varieties: [
-    
-"Hand wash liquid 500gm new design 20pcs/box",
- "Hand wash liquid 500gm old design 20pcs/box",
-  "Dish washing liquid 800g 12pcs/box",
-   "Bleach Liquid 4000g 4pcs/box",
-    "Glass Cleaner 500g 20 pcs/box",
-     "Colour washing liquid auto3500g 4pcs/box",
-      "Black washing liquid 3500g 4pcs/box"
-  ],
-  features: [
-    "Kills 99.9% of germs and bacteria",
-    "Tough on stains, gentle on surfaces",
-    "Pleasant and long-lasting fragrance",
-    "Safe for everyday use at home and in commercial spaces",
-    "Eco-conscious ingredients with strong cleaning power"
-  ]
-}
-,
+
   {
     id: "Pulses",
     name: "Pulses",
